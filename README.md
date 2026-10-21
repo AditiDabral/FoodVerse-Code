@@ -7,7 +7,7 @@ FoodVerse AI is a comprehensive multimodal health and nutrition agent. By bridgi
 ## Key Features
 *   **Plate Analysis & Nutrition Breakdown:** Upload a picture of any meal. The vision engine dissects the image to estimate portion sizes and calculate accurate macronutrient distributions (Protein, Carbs, Fats, Fiber).
 *   **Freshness AI & Spoilage Detection:** Assesses the surface texture and discoloration of raw produce to generate a Quality Index and provide safety/discard recommendations.
-*   ** Commercial Hygiene Monitor:** Evaluates kitchen workstation snapshots for health code compliance, identifying violations like missing hair restraints or unsafe bare-hand food contact.
+*   **Commercial Hygiene Monitor:** Evaluates kitchen workstation snapshots for health code compliance, identifying violations like missing hair restraints or unsafe bare-hand food contact.
 *   **AI Chef & Meal Planner:** Multimodal recipe generation via text, voice (Groq Whisper), or pantry photos. Creates weekly meal plans customized to user biometrics and fitness goals.
 
 ## Technology Stack
