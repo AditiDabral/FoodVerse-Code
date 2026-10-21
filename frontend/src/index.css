@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #fefce8;
+    color: #0f172a;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-dock {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(226, 232, 240, 0.8);
+}
+
+/* Smooth transitions */
+.smooth-all {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Hide scrollbar but allow touch/mouse scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Waveform pulse animation */
+@keyframes soundwave {
+  0%, 100% { height: 6px; }
+  50% { height: 26px; }
+}
+
+.animate-wave-1 { animation: soundwave 1s infinite 0.1s ease-in-out; }
+.animate-wave-2 { animation: soundwave 1s infinite 0.25s ease-in-out; }
+.animate-wave-3 { animation: soundwave 1s infinite 0.4s ease-in-out; }
+.animate-wave-4 { animation: soundwave 1s infinite 0.15s ease-in-out; }
+.animate-wave-5 { animation: soundwave 1s infinite 0.3s ease-in-out; }
+
+/* Neo-Brutalist Tactile Animations */
+@layer utilities {
+  .neo-press {
+    @apply transition-all duration-200 ease-in-out;
+  }
+  .neo-press:hover, .neo-press:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px #0f172a;
+  }
+  .neo-lift {
+    @apply transition-all duration-200 ease-in-out;
+  }
+  .neo-lift:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 6px 6px 0px #0f172a;
+  }
+  .neo-input {
+    @apply transition-all duration-200 outline-none;
+  }
+  .neo-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #0f172a;
+    background-color: #fefce8;
+  }
+}
+
