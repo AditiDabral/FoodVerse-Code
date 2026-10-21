@@ -4,6 +4,12 @@
 ##  Project Overview
 FoodVerse AI is a comprehensive multimodal health and nutrition agent. By bridging advanced Computer Vision with Large Language Model (LLM) reasoning via Groq, the platform allows users to seamlessly track exact macros from meal photos, detect produce spoilage, monitor commercial kitchen hygiene, and instantly generate dynamic, personalized recipes.
 
+
+## 🔗 Project Links
+* **Live Demo:** https://food-verse-code.vercel.app
+* **GitHub Repository Docs  :** https://github.com/AditiDabral/Food-Verse-AI---Multimodal-Food-Intelligence-Agent-
+)
+
 ## Key Features
 *   **Plate Analysis & Nutrition Breakdown:** Upload a picture of any meal. The vision engine dissects the image to estimate portion sizes and calculate accurate macronutrient distributions (Protein, Carbs, Fats, Fiber).
 *   **Freshness AI & Spoilage Detection:** Assesses the surface texture and discoloration of raw produce to generate a Quality Index and provide safety/discard recommendations.
