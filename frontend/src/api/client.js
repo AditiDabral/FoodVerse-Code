@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://foodverse-api.onrender.com';
 
 export const RATE_LIMIT_MESSAGE = "Our AI servers are currently experiencing high traffic. Please wait a moment before trying again.";
 
